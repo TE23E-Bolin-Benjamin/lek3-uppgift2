@@ -1,0 +1,97 @@
+body{
+    background-image: url(./img/ek.jpg);
+}
+
+/* Stil för huvudrubrik */
+h1 {
+    color: purple; /* Ljusblå textfärg */
+    background-color: lightblue; /* Lila bakgrund */
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center; /* Endast h1 centrerad */
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Stil för kapitelrubriker (h2) */
+h2 {
+    color: lightblue; /* Ljusblå textfärg */
+    background-color: purple; /* Lila bakgrund endast för kapitelrubriker */
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left; /* h2 rubrikerna står till vänster */
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+/* Stil för texten under rubrikerna */
+p {
+    color: black; /* Svart textfärg */
+    background-color: white; /* Vit bakgrund */
+    padding: 10px; /* Skapar utrymme runt texten */
+    border-radius: 5px; /* Lätt rundade hörn */
+    margin-bottom: 20px; /* Avstånd under textstycken */
+    line-height: 1.6; /* Förbättrad läsbarhet */
+}
+
+/* Allmänna inställningar för body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Ljusgrå bakgrund */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Stil för listor */
+ul {
+    list-style-type: none; /* Tar bort standard-punktlista */
+    padding: 0;
+}
+
+/* Stil för länkar */
+a {
+    text-decoration: underline; /* Understrykning på alla länkar */
+    color: white; /* Vit textfärg för länkar */
+    background-color: black; /* Svart bakgrund för länkar */
+    padding: 10px;
+    border-radius: 5px; /* Rundade hörn */
+    display: inline-block;
+    margin-bottom: 10px; /* Utrymme mellan länkar */
+}
+
+/* Stil för bildlänkar */
+a img {
+    border: 3px solid black; /* Svart ram runt bilder */
+    border-radius: 5px; /* Rundade hörn på bilder */
+    transition: transform 0.3s ease; /* Övergångseffekt vid hovring */
+    margin-bottom: 5px; /* Utrymme mellan bilder och "platå" */
+}
+
+/* Svart platå under bilderna */
+img {
+    display: block;
+    margin: 0 auto; /* Centrerar bilden */
+    position: relative;
+}
+
+img::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 20px; /* Höjd på den svarta platån */
+    background-color: black;
+    margin-top: -5px; /* Justering för att lägga platån direkt under bilden */
+    z-index: -1;
+    position: relative;
+}
+
+/* När man hovrar över bilder */
+a img:hover {
+    transform: scale(1.1); /* Förstorar bilden vid hovring */
+}
+
+/* Specifik stil för kapitelrubriker */
+#kap1, #kap2, #kap3 {
+    background-color: purple; /* Lila bakgrund endast för kapitel 1, 2 och 3 */
+}
